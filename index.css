@@ -6,7 +6,7 @@
 }
 
 html{
-    background-color: rgb(49, 48, 48);
+    background-color: rgb(253, 239, 239);
 }
 #header{
     display: flex;
@@ -21,16 +21,19 @@ html{
 #titulo h1{
     font-family: 'Luckiest Guy', cursive;
     font-size: 100px;
-    text-shadow: 0px 0px 80px white;
+    text-shadow: 0px 0px 80px rgb(227, 117, 255);
 }
 
 #main{
     display: flex;
     justify-content: space-around;
+    width: 100%;
+    height: 100%;
 }
 
 #botoes{
-    display: flex;  
+    display: flex; 
+    justify-content: space-around; 
 }
 
 .subtitulo{
@@ -45,7 +48,25 @@ html{
     color:rgb(132, 0, 255);
     text-shadow: 0px 0px 25px black;
 }
+
 #Jogar{
     display: flex;
     justify-content: center;
+}
+
+#footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer h1{
+    font-size: 20px;
+    font-family: 'Luckiest Guy', cursive;
+    color:rgb(132, 0, 255);
+    text-shadow: 0px 0px 25px black;
 }
