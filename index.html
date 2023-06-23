@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,35 +14,45 @@
         </div>
     </section>
 
-    <section id="main">
-        <div id="esquerda">
-            <div class="subtitulo">
-                <h2>Bingo</h2>
+    <main>
+        <section id="esquerda">
+            <div id="header_cartelas">
+                <div class="subtitulo">
+                    <h2>Bingo</h2>
+                </div>
+    
+                <div id="botoes">
+                    <div id="CriarCartela">
+                        <button class="botão" onclick="gerarCartela()">Criar Cartela</button>
+                    </div>
+            
+                    <div id="ReiniciarJogo">
+                        <button class="botão" id="botão2" onclick="reiniciarJogo()">Reiniciar Jogo</button>
+                    </div>
+                </div>
             </div>
 
-            <div id="botoes">
-                <div id="CriarCartela">
-                    <button class="botão">Criar Cartela</button>
-                </div>
-        
-                <div id="ReiniciarJogo">
-                    <button class="botão" id="botão2">Reiniciar Jogo</button>
-                </div>
+            <div id="lugar_cartelas">
+                <div id="cartelas"></div>
             </div>
+        </section>
 
-            <div id="cartelas"></div>
-        </div>
-
-        <div id="direita">
+        <section id="direita">
             <div class="subtitulo">
                 <h2>Área do Jogo</h2>
             </div>
 
             <div id="Jogar">
-                <button class="botão">Jogar</button>
+                <button class="botão" onclick="exibirNumerosAleatorios()">Jogar</button>
             </div>
-        </div>
-    </section>
+
+            <div id="area_jogo">
+
+            </div>
+        
+        </section>
+    </main>
+
 
     <section id="footer">
         <div>
@@ -50,5 +60,7 @@
             </h1>
         </div>
     </section>
+
+    <script src="index.js"></script>
 </body>
 </html>
